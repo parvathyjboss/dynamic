@@ -43,6 +43,8 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class dynamic {
-
+file { '/tmp/hostname.txt' :
+ content => template('dynamic/hostname.erb')
+}
 
 }
